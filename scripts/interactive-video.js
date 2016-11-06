@@ -102,7 +102,7 @@ H5P.InteractiveVideo = (function ($, EventDispatcher, DragNBar, Interaction) {
     var iOSMatches = navigator.userAgent.match(/(iPhone|iPod) OS (\d*)_/i);
     if(iOSMatches !== null && iOSMatches.length === 3) {
       // If iOS < 10, let's play video only...
-      self.justVideo = iOSMatches[2] < 10;
+      //self.justVideo = iOSMatches[2] < 10;
     }
 
     // set start time
