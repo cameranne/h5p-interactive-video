@@ -5,7 +5,7 @@
   "contentType": "Media",
   "majorVersion": 1,
   "minorVersion": 10,
-  "patchVersion": 7,
+  "patchVersion": 8,
   "machineName": "H5P.InteractiveVideo",
   "author": "Joubel AS",
   "embedTypes": [
@@ -44,7 +44,7 @@
     {
       "machineName": "H5P.Video",
       "majorVersion": 1,
-      "minorVersion": 3
+      "minorVersion": 2
     },
     {
       "machineName": "H5P.DragNBar",
