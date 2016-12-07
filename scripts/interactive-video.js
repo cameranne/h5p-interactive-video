@@ -102,7 +102,7 @@ H5P.InteractiveVideo = (function ($, EventDispatcher, DragNBar, Interaction) {
     var iOSMatches = navigator.userAgent.match(/(iPhone|iPod) OS (\d*)_/i);
     if(iOSMatches !== null && iOSMatches.length === 3) {
       // If iOS < 10, let's play video only...
-      self.justVideo = iOSMatches[2] < 10;
+      //self.justVideo = iOSMatches[2] < 10;
     }
 
     // set start time
@@ -158,7 +158,7 @@ H5P.InteractiveVideo = (function ($, EventDispatcher, DragNBar, Interaction) {
     var firstPlay = true;
     self.video.on('stateChange', function (event) {
 
-      if (!self.controls && isLoaded) {
+      if (isLoaded) {
         // Add controls if they're missing and 'loaded' has happened
         self.addControls();
         self.trigger('resize');
@@ -1405,7 +1405,7 @@ H5P.InteractiveVideo = (function ($, EventDispatcher, DragNBar, Interaction) {
     var fullscreenOn = this.$container.hasClass('h5p-fullscreen') || this.$container.hasClass('h5p-semi-fullscreen');
 
     // Resize the controls the first time we're visible
-    if (!this.justVideo && this.controlsSized === undefined) {
+    if (this.controlsSized === undefined) {
       this.resizeControls();
     }
 
