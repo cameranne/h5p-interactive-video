@@ -85,7 +85,8 @@ H5P.InteractiveVideo = (function ($, EventDispatcher, DragNBar, Interaction) {
     });
 
     // Detect whether to add interactivies or just display a plain video.
-    self.justVideo = navigator.userAgent.match(/iPhone|iPod/i) ? true : false;
+    //self.justVideo = navigator.userAgent.match(/iPhone|iPod/i) ? true : false;
+    self.justVideo = false;
 
     var startAt = (self.previousState && self.previousState.progress) ? Math.floor(self.previousState.progress) : 0;
     // Start up the video player
